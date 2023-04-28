@@ -1,0 +1,28 @@
+npm init -y
+
+npm i -D tailwindcss postcss autoprefixer
+
+npx tailwindcss init
+
+tailwind.config.js (di content)
+"./public/**/*.{html,js}"
+
+buat file input.css dan isi line ini
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+npx tailwindcss -i ./public/tailwind/input.css -o ./public/tailwind/output.css --watch
+
+tambahkan line untuk menautkan css
+<link rel="stylesheet" href="public/tailwind/output.css">
+
+package.json (testnya dihapus)
+"dev" : "npx tailwindcss -i ./public/tailwind/input.css -o ./public/tailwind/output.css --watch"
+
+Finalize tailwindcss
+npx tailwindcss -o ./public/tailwind/final-output.css
+
+setelah itu pindah tautan file output.css ke final-ouput.css
+
+SELESAI
