@@ -7,6 +7,8 @@ npx tailwindcss init
 tailwind.config.js (di content)
 "./public/**/*.{html,js}"
 
+buat folder public yang isinya input.css dan output.css juga semua file htmlnya
+
 buat file input.css dan isi line ini
 @tailwind base;
 @tailwind components;
